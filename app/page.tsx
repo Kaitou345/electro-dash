@@ -7,7 +7,7 @@ import Notes from "./(includes)/Notes";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-gray-900">
       <Schedule />
       <Events/>
       <Notes />

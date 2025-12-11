@@ -98,7 +98,7 @@ export default function AdminPanel() {
 
     // Admin view
     return (
-        <section className="py-10">
+        <section className="bg-gray-900 text-white py-10">
             <Container>
                 <div className="flex items-center justify-between">
                     <h2 className="text-lg font-semibold py-4">Admin Panel</h2>

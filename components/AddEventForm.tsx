@@ -205,7 +205,7 @@ export default function AddEventForm() {
             // prevent manual typing into date input; still allows picker selection
             e.preventDefault();
           }}
-          className={`p-3 rounded bg-gray-700 border ${fieldErrors.date ? "border-red-500" : "border-gray-600"} text-gray-200 focus:outline-none`}
+          className={`p-3  rounded bg-gray-700 border ${fieldErrors.date ? "border-red-500" : "border-gray-600"} text-gray-200 focus:outline-none`}
         />
 
         {/* Time input: min is dynamic to avoid selecting past times for today */}
@@ -214,7 +214,7 @@ export default function AddEventForm() {
             value={startTime}
             onChange={(e) => setStartTime(e.target.value)}
             type="time"
-            className={`p-3 rounded bg-gray-700 border ${fieldErrors.startTime ? "border-red-500" : "border-gray-600"} text-gray-200 focus:outline-none`}
+            className={`p-3  rounded bg-gray-700 border ${fieldErrors.startTime ? "border-red-500" : "border-gray-600"} text-gray-200 focus:outline-none`}
             min={minTimeForSelectedDate}
           />
         )}
