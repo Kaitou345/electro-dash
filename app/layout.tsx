@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { outfit } from "@/lib/fonts";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Electro Dash",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body
         className={`${outfit.className} antialiased`}
       >
+        <Analytics />
         {children}
       </body>
     </html>
